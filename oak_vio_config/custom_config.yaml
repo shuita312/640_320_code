@@ -1,0 +1,39 @@
+# 基础配置
+slam_off: true
+histogram_method: none
+orb_database_path: ./database.bin
+is_6dof: true
+video_see_through: off
+
+# 本地地图配置
+mapping_mode: false
+rtc_mode: on
+save_map: false
+load_map: false
+map_save_path: ./map
+cloud_mapping: false
+server.address: 192.168.0.172:50072
+
+# 数据保存
+save_data: false
+save_trajectory: false
+data_saved_path: ./output
+
+# 曝光设置
+# auto_exposure: false 关闭自动曝光
+# exposure_time: 4.0  增大消除条纹
+# exposure_gain: 2  增大增大亮度
+auto_exposure: true
+exposure_time: 4.0
+exposure_gain: 4
+
+# 帧率设置
+open_camera: on
+ChipPoint.fps: 30
+Camera.fps: 30
+Imu.fps: 1000
+
+# 预测设置
+imu_predict_max_ts: 0.02
+predict_only_rotation: 0
+predict_position_scale: 0.5
